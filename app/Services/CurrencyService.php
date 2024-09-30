@@ -29,7 +29,6 @@ class CurrencyService
             ]);
 
             $data = json_decode($response->getBody()->getContents(), true);
-            \Log::info($data);
 
             if (isset($data['data'])) {
                 foreach ($data['data'] as $currencyCode => $rate) {
