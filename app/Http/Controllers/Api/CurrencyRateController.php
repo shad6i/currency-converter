@@ -15,6 +15,7 @@ class CurrencyRateController extends Controller
     }
 
     // Метод для обновления курсов через API
+    // если зачем-то на внещний крон вешать нужно
     public function updateRates(): JsonResponse
     {
         try {
