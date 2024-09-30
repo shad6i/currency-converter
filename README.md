@@ -14,6 +14,12 @@ composer install
 
 ### Шаг 3: Настройка .env
 
+Добавьте ключ
+
+```bash
+php artisan key:generate  
+```
+
 Добавьте переменные в файл .env для доступа к API курсов валют:
 
 FREE_CURRENCY_API_KEY
@@ -32,6 +38,8 @@ php artisan migrate
 
  Обновление курса валют на каждый день уже описано в ```Console/Kernel.php```, подключите его к любому удобному способу
  управлению расписанием - к примеру crontab
+ 
+ Так же описан ``routes/console.php`` , который можно запустить через ``php artisan schedule:run``
  
 ## Использование
 
